@@ -24,3 +24,14 @@ $green: #198754;
 $teal: #20c997;
 $cyan: #0dcaf0;
 // scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+$primary: $teal;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-900;
+// scss-docs-end theme-color-variables
