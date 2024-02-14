@@ -29,8 +29,8 @@
     <title>Item</title>
   </head>
   <body data-bs-theme="dark">
-    <header>
-      <nav class="navbar text-left mx-5">
+    <header class="mb-5">
+      <nav class="navbar text-left mx-5 py-5">
         <i class="fa-solid fa-bars fs-4 text-left" style="width: 218px"></i>
         <a href="./">LOGO</a>
         <a href="#" class="btn btn-outline-primary"
@@ -38,7 +38,69 @@
         >
       </nav>
     </header>
-    <main></main>
+    <main class="container">
+      <div class="row gap-5">
+        <div class="col">
+          <img
+            src="../assets/iphone-15.jpg"
+            alt="Product image"
+            class="w-100"
+          />
+        </div>
+        <div class="col">
+          <h2>Item Name</h2>
+          <div class="row bg-secondary mb-3">
+            <div class="col-auto"><i class="fa-solid fa-user fs-1"></i></div>
+            <div class="col-auto">
+              <p>Name of Auctioneer*</p>
+              <p>Price starting at: 500$</p>
+            </div>
+          </div>
+          <div class="row bg-secondary mb-3">
+            <p>Item Describtion</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur, quas in officia dolore culpa voluptates quo! Expedita
+              ipsum vitae, ullam, nostrum repellat quibusdam neque, autem
+              inventore mollitia illum eos veritatis!
+            </p>
+          </div>
+          <form class="p-0 row mb-3 gap-3">
+            <input
+              type="number"
+              placeholder="550"
+              class="col form-control fs-3"
+            />
+            <button class="btn btn-primary fs-3 col">Place Bid</button>
+          </form>
+          <div class="row bg-secondary mb-3">
+            <div class="col-auto"><i class="fa-solid fa-user fs-1"></i></div>
+            <div class="col-auto">
+              <p>Name of Current Bidder*</p>
+              <p>Price starting at: 500$</p>
+            </div>
+          </div>
+          <div class="row bg-secondary mb-3">
+            <p>Shipping</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur, quas in officia dolore culpa voluptates quo! Expedita
+              ipsum vitae, ullam, nostrum repellat quibusdam neque, autem
+              inventore mollitia illum eos veritatis!
+            </p>
+          </div>
+
+          <div class="row bg-secondary mb-3 opacity-25">
+            <p class="fs-5">Bidding History</p>
+            <div class="col-auto"><i class="fa-solid fa-user fs-1"></i></div>
+            <div class="col-auto">
+              <p>Name of Current Bidder*</p>
+              <p>Price starting at: 500$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
