@@ -1,2 +1,7 @@
 @import "_variables.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
