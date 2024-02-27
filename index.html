@@ -26,11 +26,11 @@
         <div class="row"><h1 class="text-center">Auction Site</h1></div>
         <div class="row mt-5 mb-2"><h2>Log in</h2></div>
         <span id="loginError" class="form-text text-danger"></span>
-        <form method="" id="logInForm" novalidate>
+        <form id="logInForm">
           <div class="row">
             <input
-              id="loginEmail"
               type="email"
+              name="email"
               class="form-control p-2 rounded-3"
               placeholder="name@example.com"
               required
@@ -38,8 +38,8 @@
           </div>
           <div class="row my-3">
             <input
-              id="loginPassword"
               type="password"
+              name="password"
               class="form-control p-2 rounded-3"
               placeholder="password"
               required
@@ -59,58 +59,46 @@
           </div>
         </div>
         <div class="row mb-2"><h2>Sign Up</h2></div>
-        <form class="needs-validation" id="signUpForm" novalidate>
+        <form id="signUpForm">
           <div class="row my-3">
             <input
-              id="email"
-              type="text"
+              type="email"
+              name="email"
               class="form-control p-2"
               placeholder="example@noroff.no"
               required
+              pattern="^[\w\-.]+@(stud\.)?noroff\.no$"
+              title="Only (stud.)noroff.no emails are allowed to register"
             />
-            <span id="email_error" class="form-text text-danger d-none"
+            <span class="help form-text text-danger"
               >please enter a valid noroff email address</span
             >
           </div>
           <div class="row my-3">
-            <div class="input-group border rounded-3 p-0">
-              <span class="input-group-text">@</span>
               <input
-                id="name"
                 type="name"
+                name="name"
                 class="form-control p-2"
                 placeholder="username"
                 required
+                pattern="^[\w]+$"
+                title="Name can only include letters a-z, numbers and underscore"
               />
-            </div>
-            <span id="name_error" class="form-text text-danger d-none"
-              >please enter a username</span
-            >
+              <span class="help form-text text-danger"
+                >please enter a valid username</span
+              >
           </div>
           <div class="row my-3">
             <input
-              id="password"
               type="password"
+              name="password"
               class="form-control p-2 rounded-3"
               placeholder="password"
               required
+              minlength="8"
             />
-            <span id="password_message" class="form-text text-danger d-none"
+            <span id="password_message" class="help form-text text-danger"
               >Must be at least 8 characters</span
-            >
-          </div>
-          <div class="row my-3">
-            <input
-              id="confirmPassword"
-              type="password"
-              class="form-control p-2 rounded-3"
-              placeholder="password"
-              required
-            />
-            <span
-              id="confirm_password_message"
-              class="form-text text-danger d-none"
-              >must be identical</span
             >
           </div>
           <div class="row">
