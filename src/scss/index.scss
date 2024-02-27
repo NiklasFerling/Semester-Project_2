@@ -5,3 +5,11 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
+.help {
+  display: none;
+}
+
+input:invalid + .help {
+  display: block;
+}
