@@ -7,5 +7,3 @@ import * as listings from "./api/listings/index.mjs"
 
 setRegisterFormListener()
 setLoginFormListener()
-
-console.log(listings);
