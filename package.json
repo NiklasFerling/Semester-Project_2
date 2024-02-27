@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node-sass --output-style compressed src/scss -o dist/css",
-    "watch": "nodemon -e scss -x \"npm run build\""
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css"
   },
   "keywords": [],
   "author": "",
