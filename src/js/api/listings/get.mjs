@@ -6,8 +6,7 @@ const action = "/listings"
 export async function getListings() {
     const getListingURL = constants.API_AUCTION_URL + action
     const response = await authFetch(getListingURL)
-    const result = await response.json()
-    console.log(result);
+    return await response.json()
 }
 
 export async function getListing(id) {
