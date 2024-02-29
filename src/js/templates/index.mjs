@@ -1,5 +1,2 @@
-import { profileTemplate } from "./profileBtn.mjs";
-
-export default {
-    profileTemplate
-} 
+export * from "./card.mjs"
+export * from "./profileBtn.mjs"

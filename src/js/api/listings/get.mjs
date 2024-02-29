@@ -1,7 +1,7 @@
 import { authFetch } from "../auth/fetch.mjs"
 import * as constants from "/src/js/api/constants.mjs"
 
-const action = "/listings"
+const action = "/listings?_seller=true&_bids=true"
 
 export async function getListings() {
     const getListingURL = constants.API_AUCTION_URL + action
