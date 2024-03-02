@@ -6,18 +6,17 @@ import storage from "./storage/index.mjs";
 import * as template from "./templates/index.mjs"
 import * as constants from "./api/constants.mjs"
 import * as listings from "./api/listings/index.mjs"
+import * as sort from "./api/utilities/sort.mjs"
 
 setRegisterFormListener()
 setLoginFormListener()
 template.renderProfileBtn()
 
-
-async function testTemplate() {
-    const array = await listings.getListings()
-    const container = document.querySelector("#item-container")
-    array.forEach(element => {
-        console.log(element);
-        template.renderCard(element, container)
-    });
+if (window.location.pathname === "/listing/") {
+    template.renderItemPage()
 }
-testTemplate()
+
+const itemContainer = document.querySelector("#item-container")
+if(itemContainer) {
+    template.renderCards(itemContainer)
+}

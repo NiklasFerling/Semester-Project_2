@@ -1,3 +1,5 @@
+import { getListings } from "../api/listings/get.mjs"
+
 export function card(listing) {
     const card = document.createElement("a")
     card.classList.add("card", "col-lg-2", "col-md-3", "col-sm-6", "p-0", "rounded-0", "mb-3", "text-decoration-none")
@@ -31,6 +33,9 @@ export function card(listing) {
     return card
 }
 
-export function renderCard(listing, container) {
-    container.append(card(listing))
+export async function renderCards(container) {
+    const array = await getListings()
+    array.forEach(element => {
+        container.append(card(element))
+    });
 }

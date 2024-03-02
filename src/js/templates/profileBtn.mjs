@@ -1,7 +1,7 @@
 import { load } from "../storage/load.mjs"
 
 export function profileBtn() {
-    const user = load("profile")
+    const user = load("user")
     const profileBtn = document.createElement("a")
     profileBtn.setAttribute("href", "/profile/")
     profileBtn.classList.add("btn", "btn-outline-primary")
