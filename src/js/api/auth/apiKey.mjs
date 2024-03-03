@@ -1,9 +1,9 @@
-import { load } from "../../storage/load.mjs";
+import storage from "../../storage/index.mjs"
 import { API_AUCTION_URL } from "../constants.mjs";
 
 export async function apiKey() {
   const apiKeyUrl = "https://v2.api.noroff.dev/auth/create-api-key";
-  const token = await load("token");
+  const token = await storage.load("token");
   const response = await fetch(apiKeyUrl, {
     method: "POST",
     headers: {
@@ -11,5 +11,6 @@ export async function apiKey() {
       Authorization: `Bearer ${token}`,
     },
   });
-  console.log(await response.json());
+  const result = await response.json()
+  storage.save("APIKey", result.data)
 }
