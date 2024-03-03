@@ -1,5 +1,6 @@
 import { setRegisterFormListener } from "./api/handlers/register.mjs";
 import { setLoginFormListener } from "./api/handlers/login.mjs";
+import { setCreateListingFormListener } from "./api/handlers/create.mjs";
 
 import storage from "./storage/index.mjs";
 
@@ -10,6 +11,7 @@ import * as sort from "./api/utilities/sort.mjs"
 
 setRegisterFormListener()
 setLoginFormListener()
+setCreateListingFormListener()
 template.renderProfileBtn()
 
 if (window.location.pathname === "/listing/") {
