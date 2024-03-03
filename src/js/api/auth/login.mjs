@@ -18,7 +18,7 @@ export async function login(profile) {
         const { accessToken, ...user } = json
         save("token", accessToken)
         save("user", user)
-        // window.location.href = "/home/"
+        window.location.href = "/home/"
     } else {
         loginError.innerText = json.errors[0].message
     }
