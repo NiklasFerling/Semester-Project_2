@@ -27,7 +27,7 @@ git clone https://github.com/NiklasFerling/Portfolio-Website.git
 
 2. Install dev dependencies
 
- - Open the terminal and run the command ```npm i ```
+ - Open the terminal and run the command ```npm i```
 
 3. Open with Live Server
 
