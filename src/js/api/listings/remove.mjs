@@ -9,6 +9,4 @@ export async function removeListing(id) {
     }
     const removeListingURL = constants.API_AUCTION_URL + action + "/" + id
     const response = await authFetch(removeListingURL, method)
-    const result = await response.json()
-    console.log(result);
 }

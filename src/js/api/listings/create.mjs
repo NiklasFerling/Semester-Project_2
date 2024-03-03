@@ -6,7 +6,6 @@ const method = "POST"
 
 export async function createListing(listingData) {
     const createListingURL = constants.API_AUCTION_URL + action
-    console.log(listingData.media);
     const token = await load("token")
     const response = await fetch(createListingURL, {
         method,
@@ -27,6 +26,4 @@ export async function createListing(listingData) {
             "endsAt": listingData.endsAt
         })
     })
-    const result = await response.json()
-    console.log(result);
 }

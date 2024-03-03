@@ -18,8 +18,4 @@ export async function postBid(id, amount) {
             amount: amount
         })
     })
-    console.log(await response.json());
 }
-
-// Create API KEY...
-// Not the same as accessToken

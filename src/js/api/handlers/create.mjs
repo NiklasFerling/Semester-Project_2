@@ -9,8 +9,6 @@ export function setCreateListingFormListener() {
             const form = event.target;
             const formData = new FormData(form);
             const listingData = Object.fromEntries(formData.entries());
-            console.log(listingData);
-            console.log(listingData.tags.split("\\s+"));
             createListing(listingData)
         })
     }

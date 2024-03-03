@@ -13,10 +13,8 @@ export async function itemPage() {
     const parameterString = window.location.search;
     const id = parameterString.replace("?", "");
     const listing = await (getListing(id))
-    console.log(listing);
     const sortedBids = await amount(listing.bids)
     const highestBid = sortedBids[sortedBids.length - 1]
-    console.log(highestBid);
 
     const page = document.createElement("div")
     page.classList.add("row", "gap-5")

@@ -12,6 +12,4 @@ export async function updateListing(listingData) {
         method,
         body: JSON.stringify(listingData)
     })
-    const result = await response.json()
-    console.log(result)
 }
