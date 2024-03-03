@@ -12,7 +12,7 @@ import * as sort from "./api/utilities/sort.mjs"
 setRegisterFormListener()
 setLoginFormListener()
 setCreateListingFormListener()
-template.renderProfileBtn()
+template.renderProfileOptions()
 
 if (window.location.pathname === "/listing/") {
     template.renderItemPage()
